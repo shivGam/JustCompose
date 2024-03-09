@@ -1,5 +1,6 @@
 package com.example.justcompose
 
+import android.annotation.SuppressLint
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -63,6 +64,7 @@ fun CardCategory(imgId : Int, name:String ,desc:String){
 
 data class Category(val imgId : Int,val  name:String ,val desc:String)
 
+@SuppressLint("SuspiciousIndentation")
 fun getCategory() : MutableList<Category>{
 
     val list = mutableListOf<Category>()
